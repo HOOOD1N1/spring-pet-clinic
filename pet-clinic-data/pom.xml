@@ -58,9 +58,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <skip>
-                        true
-                    </skip>
+                    <skip>true</skip>
                 </configuration>
             </plugin>
         </plugins>
