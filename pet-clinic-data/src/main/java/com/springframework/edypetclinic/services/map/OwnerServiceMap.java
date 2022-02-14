@@ -2,9 +2,10 @@ package com.springframework.edypetclinic.services.map;
 
 import com.springframework.edypetclinic.model.Owner;
 import com.springframework.edypetclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
-
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
     @Override
     public Set<Owner> findAll() {
