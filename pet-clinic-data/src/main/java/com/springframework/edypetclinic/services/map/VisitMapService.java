@@ -2,9 +2,11 @@ package com.springframework.edypetclinic.services.map;
 
 import com.springframework.edypetclinic.model.Visit;
 import com.springframework.edypetclinic.services.VisitService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService {
     @Override
     public Set<Visit> findAll() {
