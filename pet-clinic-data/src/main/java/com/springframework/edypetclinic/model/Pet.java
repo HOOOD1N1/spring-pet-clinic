@@ -23,7 +23,7 @@ public class Pet extends BaseEntity{
     @Column(name="birth_date")
     private LocalDate birthDate;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "pet")
+    @OneToMany(mappedBy = "pet", cascade = CascadeType.ALL)
     private Set<Visit> visits = new HashSet<>();
 
     public String getName() {
